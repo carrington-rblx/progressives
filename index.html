@@ -595,7 +595,7 @@ nav .nav-platform:hover,.footer-links .nav-platform:hover{color:#e83d4b!importan
 <main id="home">
 <section class="hero"><div class="hero-image" role="img" aria-label="Campaign portrait placeholder"></div><div class="hero-content">
 <div class="hero-brand"><img class="hero-full-logo" src="https://raw.githubusercontent.com/carrington-rblx/electament.com/main/f7b0df5a-991f-4c71-b8d8-3063a124801a.png" alt="AmentAmour campaign logo"></div>
-<form class="signup" id="hero-form"><input type="email" placeholder="Email Address" aria-label="Email address" required><input inputmode="numeric" placeholder="Zip Code" aria-label="Zip code" required><input class="phone" type="tel" placeholder="Phone Number (Optional)" aria-label="Phone number"><button type="submit">Join the team →</button><span class="legal">By providing your mobile number, you consent to receive campaign calls and text messages. Message and data rates may apply. Reply STOP to opt out.</span><p class="status" id="hero-status" aria-live="polite"></p></form>
+<h1 class="hero-slogan" aria-label="We are the Progressive Party"><span class="slogan-line"><span>WE</span> <span>ARE</span></span><span class="slogan-line"><span>THE</span></span><span class="slogan-line slogan-highlight"><span>PROGRESSIVE</span> <span>PARTY</span></span></h1>
 </div></section>
 <section class="intro" id="about"><a class="support-tile" href="https://discord.gg/9B9HCPXgNg" target="_blank" rel="noopener noreferrer"><strong>Support AmentAmour's campaign</strong></a><div class="intro-copy"><span class="eyebrow">Leadership that listens</span><h2>To the People.</h2><p>AmentAmour's campaign puts strong leadership and strategic solutions at the center of his service to the people. Ament focused on strong diplomacy and making public institutions work for the people they serve.</p><p></p><a class="outline-link" href="about-ament.html">Learn more →</a></div></section>
 <section class="campaign-statement" aria-label="Campaign statement">Saving America From<br>It&#39;s Failure.</section>
@@ -626,7 +626,7 @@ window.addEventListener('scroll',()=>{
   });
 },{passive:true});
 
-demoSignup('hero-form','hero-status');demoSignup('vol-form','vol-status');document.getElementById('year').textContent=new Date().getFullYear();
+demoSignup('vol-form','vol-status');document.getElementById('year').textContent=new Date().getFullYear();
 
 </script>
 
@@ -1125,5 +1125,48 @@ header .header-main-logo{
 }
 @media(max-width:430px){
   header .header-main-logo{width:112px!important;height:42px!important;max-height:42px!important}
+}
+</style>
+
+
+<style id="progressive-party-hero-slogan">
+.hero-content{gap:0!important}
+.hero-slogan{
+  display:flex!important;flex-direction:column;align-items:center;justify-content:center;
+  width:min(1050px,94vw);max-width:none!important;margin:4px auto 0!important;
+  color:#fff!important;font-family:var(--sans,Arial,sans-serif)!important;
+  font-size:clamp(38px,7.4vw,104px)!important;font-weight:950!important;
+  line-height:.98!important;letter-spacing:-.055em!important;text-align:center;
+  text-transform:uppercase;isolation:isolate;
+}
+.hero-slogan .slogan-line{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:.22em}
+.hero-slogan .slogan-line>span{
+  display:inline-block;position:relative;cursor:default;
+  transition:transform .42s cubic-bezier(.2,.8,.2,1),filter .35s ease,text-shadow .35s ease;
+  transform-origin:50% 75%;will-change:transform;
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+  .hero-slogan:hover .slogan-line>span{
+    animation:foam-bob .78s ease-in-out both;
+    filter:drop-shadow(0 5px 0 rgba(255,255,255,.22)) drop-shadow(0 10px 14px rgba(0,28,65,.3));
+    text-shadow:0 0 10px rgba(255,255,255,.55),0 0 24px rgba(139,211,255,.75);
+  }
+  .hero-slogan:hover .slogan-line>span:nth-child(2){animation-delay:.08s}
+  .hero-slogan:hover .slogan-line:nth-child(2)>span{animation-delay:.16s}
+  .hero-slogan:hover .slogan-line:nth-child(3)>span:first-child{animation-delay:.22s}
+  .hero-slogan:hover .slogan-line:nth-child(3)>span:last-child{animation-delay:.3s}
+}
+@keyframes foam-bob{
+  0%,100%{transform:translateY(0) scale(1)}
+  30%{transform:translateY(-13px) scale(1.055,1.12) rotate(-1.5deg)}
+  58%{transform:translateY(3px) scale(.97,1.04) rotate(1deg)}
+  78%{transform:translateY(-5px) scale(1.025,1.06)}
+}
+@media(max-width:760px){
+  .hero-slogan{width:90vw;font-size:clamp(34px,9vw,64px)!important;line-height:1.02!important}
+  .hero-slogan .slogan-line{gap:.16em}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-slogan .slogan-line>span{transition:none!important;animation:none!important}
 }
 </style>
