@@ -1444,3 +1444,52 @@ header .nav-donate{white-space:nowrap!important}
   )!important;
 }
 </style>
+
+
+<style id="lower-balanced-header-controls">
+/* Lower the complete header group and give navigation controls a logo-matched height. */
+header .brand,
+header nav,
+header .nav-social{
+  transform:translateY(17px)!important;
+}
+header nav{
+  align-items:stretch!important;
+  gap:clamp(8px,1.3vw,18px)!important;
+}
+header nav a,
+header .nav-donate{
+  min-height:48px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:0 clamp(10px,1.2vw,16px)!important;
+  box-sizing:border-box!important;
+  font-size:clamp(11px,.95vw,14px)!important;
+}
+header .nav-social a:not(.nav-donate){
+  align-self:center!important;
+}
+@media(max-width:760px){
+  header .brand,header nav,header .nav-social{
+    transform:translateY(13px)!important;
+  }
+  header nav a,
+  header .nav-donate{
+    min-height:37px!important;
+    padding:0 8px!important;
+    font-size:7px!important;
+  }
+}
+@media(max-width:430px){
+  header .brand,header nav,header .nav-social{
+    transform:translateY(11px)!important;
+  }
+  header nav a,
+  header .nav-donate{
+    min-height:31px!important;
+    padding:0 6px!important;
+    font-size:6px!important;
+  }
+}
+</style>
