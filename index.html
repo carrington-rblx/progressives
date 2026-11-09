@@ -586,7 +586,6 @@ nav .nav-platform:hover,.footer-links .nav-platform:hover{color:#e83d4b!importan
 </style>
 </head>
 <body>
-<div class="announcement" role="note">Support the Progressive Party Come this Midterms Season</div>
 <header>
 <a class="brand" href="./" aria-label="AmentAmour home"><img class="header-main-logo" src="https://raw.githubusercontent.com/carrington-rblx/progressives/main/Conservative%20Party%20(1).svg" alt="AmentAmour for President"></a>
 <nav><a href="./">Home</a><a href="about-ament.html">About Ament</a><a href="news.html">News</a><a href="images.html">Images</a></nav>
@@ -665,6 +664,25 @@ demoSignup('vol-form','vol-status');document.getElementById('year').textContent=
   box-shadow:0 5px 12px rgba(24,45,83,.16)!important;
 }
 
+</style>
+
+
+<style id="full-screen-hero">
+/* With the announcement removed, let the hero fill the viewport below the navigation */
+.hero{
+  height:calc(100vh - 58px)!important;
+  height:calc(100svh - 58px)!important;
+  min-height:0!important;
+  max-height:none!important;
+}
+@media(max-width:760px){
+  .hero{
+    height:calc(100vh - 54px)!important;
+    height:calc(100svh - 54px)!important;
+    min-height:0!important;
+    max-height:none!important;
+  }
+}
 </style>
 
 </body></html>
