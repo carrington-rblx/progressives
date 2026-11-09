@@ -600,6 +600,18 @@ header.split-site-header{
 header.split-site-header::-webkit-scrollbar{display:none!important;width:0!important;height:0!important}
 </style>
 
+
+<style id="header-scrolls-away-with-page">
+/* The header is visible at the top on page load, then scrolls away with the document.
+   It is not sticky or fixed and will not remain over the page while scrolling. */
+header.split-site-header{
+  position:absolute!important;
+  top:0!important;
+  left:0!important;
+  right:0!important;
+}
+</style>
+
 </head>
 <body>
 <header class="split-site-header">
