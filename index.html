@@ -1431,3 +1431,16 @@ header .nav-donate{white-space:nowrap!important}
   .hero-center-mark{width:min(350px,88vw)!important;max-height:62vh!important}
 }
 </style>
+
+
+<style id="soft-even-hero-overlay">
+/* Reduce the heavy one-sided wash and keep the background image visible evenly. */
+.hero:after{
+  background:linear-gradient(
+    0deg,
+    rgba(12,35,68,.24) 0%,
+    rgba(12,35,68,.16) 48%,
+    rgba(12,35,68,.20) 100%
+  )!important;
+}
+</style>
