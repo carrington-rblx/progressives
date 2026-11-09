@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#172b4d"><meta name="robots" content="noindex,nofollow">
+<title>Campaign Room | AmentAmour</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#172b4d;--blue:#75b5dc;--red:#ed3d4b;--paper:#f8f8f5;--ink:#1d2d49;--muted:#6b7687;--line:#dce2e8;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:#f1f4f6;color:var(--ink);font-family:Montserrat,Arial,sans-serif;font-size:14px}button,input,textarea,select{font:inherit}button{cursor:pointer}
+.top{background:var(--navy);color:white;padding:20px clamp(20px,5vw,72px);display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:4px solid var(--blue)}
+.brand{display:flex;align-items:center;gap:14px}.brand-mark{width:38px;height:38px;border:2px solid var(--blue);display:grid;place-items:center;font-weight:900;color:white;transform:rotate(-4deg)}.brand small{display:block;color:#a9c9e0;font-size:9px;letter-spacing:.2em;font-weight:900;margin-bottom:4px}.brand strong{font-size:14px;letter-spacing:.04em}
+.top-actions{display:flex;align-items:center;gap:16px}.top a{color:white;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.top button{border:1px solid #ffffff55;background:transparent;color:white;border-radius:3px;padding:10px 14px;font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.shell{width:min(1240px,calc(100% - 40px));margin:38px auto 80px}.intro{margin-bottom:26px}.eyebrow{font-size:10px;font-weight:900;letter-spacing:.22em;color:#547e9c;text-transform:uppercase}.intro h1{font-size:clamp(28px,4vw,42px);letter-spacing:-.055em;color:var(--navy);margin:9px 0}.intro p{color:var(--muted);line-height:1.7;max-width:700px;margin:0}
+.panel{background:white;border:1px solid var(--line);box-shadow:0 10px 35px #142b4910;border-radius:6px}.auth-wrap{max-width:490px;margin:70px auto}.auth-card{padding:34px}.auth-card h2{font-size:24px;color:var(--navy);letter-spacing:-.04em;margin:8px 0}.auth-card p{color:var(--muted);line-height:1.7}.field{display:grid;gap:7px;margin:16px 0}.field label{font-size:10px;font-weight:900;letter-spacing:.12em;color:#64758a;text-transform:uppercase}.field input,.field textarea,.field select{width:100%;border:1px solid #cfd7df;border-radius:3px;padding:13px 14px;color:var(--navy);background:#fff;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:#4e94c1;box-shadow:0 0 0 3px #75b5dc25}.field textarea{min-height:130px;resize:vertical;line-height:1.65}
+.btn{border:0;border-radius:3px;padding:13px 18px;background:var(--navy);color:white;font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.btn:hover{background:#25446f}.btn.blue{background:#dceefa;color:var(--navy)}.btn.red{background:var(--red)}.btn.ghost{background:white;border:1px solid #cfd7df;color:var(--navy)}.btn:disabled{opacity:.45;cursor:not-allowed}.auth-toggle{background:none;border:0;color:#28658e;font-weight:800;padding:0;text-decoration:underline}
+.notice{padding:12px 14px;border-radius:3px;background:#edf5fa;color:#345b78;font-size:12px;line-height:1.6;margin:14px 0}.notice.error{background:#fff0f0;color:#9a3038}.notice.good{background:#edf8f1;color:#276541}.hidden{display:none!important}
+.workspace{display:grid;grid-template-columns:300px minmax(0,1fr);gap:22px;align-items:start}.sidebar{padding:20px;position:sticky;top:20px}.side-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.side-head strong{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--navy)}.article-list{display:grid;gap:8px}.article-item{padding:13px;border:1px solid var(--line);background:#fff;text-align:left;border-radius:3px;width:100%;color:var(--ink)}.article-item.active{border-color:#75b5dc;background:#f1f8fc}.article-item strong{display:block;font-size:12px;line-height:1.45;margin-bottom:7px}.article-item small{font-size:9px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#688096}.status{display:inline-block;border-radius:20px;padding:4px 8px;background:#eef1f4;color:#5c6878;font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.status.published,.status.approved{background:#eaf6ee;color:#287043}.status.submitted{background:#fff5e5;color:#8a5b13}.status.rejected{background:#fff0f0;color:#a33942}
+.editor{padding:clamp(20px,3vw,34px)}.editor-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:22px}.editor-head h2{font-size:22px;letter-spacing:-.04em;color:var(--navy);margin:6px 0}.editor-actions{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}.block-head{display:flex;justify-content:space-between;align-items:center;margin:24px 0 12px;border-top:1px solid var(--line);padding-top:18px}.block-head strong{font-size:11px;letter-spacing:.13em;text-transform:uppercase}.block-tools{display:flex;gap:7px;flex-wrap:wrap}.block{border:1px solid var(--line);border-radius:4px;padding:15px;margin:10px 0;background:#fbfcfd}.block-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.block-top b{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#5f748b}.block textarea{min-height:150px}.block img{max-width:180px;max-height:120px;object-fit:cover;border-radius:3px;display:block;margin:10px 0}.block-controls{display:flex;gap:6px}.icon-btn{border:1px solid var(--line);background:#fff;color:#52677c;border-radius:3px;padding:6px 9px;font-size:11px}.block .grid2{gap:10px}.help{font-size:11px;color:#798697;line-height:1.6}.review-box{background:#f4f7f9;border:1px solid var(--line);padding:16px;border-radius:4px;margin-top:22px}.review-box h3{font-size:11px;letter-spacing:.13em;text-transform:uppercase;margin:0 0 10px}.members{margin-top:22px;padding:22px}.member-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0;border-top:1px solid var(--line)}.member-row strong{font-size:12px}.member-row small{display:block;color:var(--muted);margin-top:4px}
+.empty{padding:50px 25px;text-align:center;color:var(--muted)}.empty strong{display:block;color:var(--navy);font-size:18px;margin-bottom:8px}.footer{text-align:center;color:#8793a0;font-size:10px;padding:28px}
+@media(max-width:850px){.workspace{grid-template-columns:1fr}.sidebar{position:static}.article-list{grid-template-columns:repeat(2,minmax(0,1fr))}.editor-head{display:block}.editor-actions{justify-content:flex-start;margin-top:14px}}
+@media(max-width:560px){.top{padding:15px 18px}.top-actions>a{display:none}.shell{width:calc(100% - 24px);margin:24px auto 55px}.auth-card,.editor{padding:20px}.grid2{grid-template-columns:1fr}.article-list{grid-template-columns:1fr}.editor-actions .btn{flex:1}.member-row{align-items:flex-start;flex-direction:column}}
+
+.yp-admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:15px}.yp-admin-box{background:#fff;border:1px solid #e4e7eb;padding:17px;min-width:0}.yp-search{width:100%;padding:11px;border:1px solid #d7dce1;margin:5px 0 9px;background:#fff;color:#172b4d}.yp-list{display:grid;gap:6px;max-height:440px;overflow:auto}.yp-list-item{display:flex;align-items:center;justify-content:space-between;gap:10px;text-align:left;border:1px solid #e5e8eb;background:#fff;padding:11px;cursor:pointer;color:#172b4d}.yp-list-item:hover{border-color:#82bee1;background:#f4f8fa}.yp-list-item b,.yp-list-item small{display:block}.yp-list-item b{font-size:10px}.yp-list-item small{font-size:8px;color:#718096;margin-top:4px}.yp-notice{padding:10px 12px;background:#eaf4f8;color:#172b4d;font-size:10px;margin:12px 0}.yp-notice.bad{background:#fff0f0;color:#a12734}.yp-check{display:flex;align-items:center;gap:8px;font-size:10px;margin:12px 0}.yp-muted{font-size:10px;color:#718096;line-height:1.6}.yp-response-detail{max-height:530px;overflow:auto}.yp-answer{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid #e7eaed;padding:12px 0}.yp-answer b{display:block;font-size:10px}.yp-answer span{display:block;font-size:8px;color:#748296;margin-top:4px}.yp-answer p{width:100%;margin:0;background:#f0f5f8;padding:9px;font-size:10px;line-height:1.6}.yp-decision{font-size:8px;text-transform:uppercase;letter-spacing:.08em}.yp-decision.reject{color:#d93242}.yp-decision.improve{color:#347da9}.yp-decision.keep{color:#318060}.yp-decision.unknown{color:#7d8795}.yp-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.yp-stat{border:1px solid #e5e8eb;padding:12px}.yp-stat h4{font-size:11px;margin:0 0 5px}.yp-stat>small{font-size:8px;color:#718096}.yp-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:12px 0}.yp-stat-grid span{font-size:8px;color:#68768a}.yp-stat-grid b{display:block;color:#172b4d;font-size:10px;margin-top:3px}.yp-stat details{font-size:9px}.yp-stat blockquote{margin:7px 0;padding:8px;background:#f2f6f8;border-left:2px solid #82bee1;font-size:9px;line-height:1.6}.yp-admin-box .field{margin:10px 0}.yp-admin-box .field label{display:block;margin-bottom:6px}.yp-admin-box textarea{width:100%;border:1px solid #d7dce1;padding:11px;resize:vertical;font:12px Montserrat,Arial}.yp-admin-box input:not([type=checkbox]),.yp-admin-box select{width:100%;border:1px solid #d7dce1;padding:11px;font:11px Montserrat,Arial}.yp-admin-box .side-head{padding:0 0 10px}.yp-admin-box .editor-actions{display:flex;gap:7px;flex-wrap:wrap}.yp-admin-box .btn{font-size:8px;padding:10px 14px}@media(max-width:760px){.yp-admin-grid{grid-template-columns:1fr}.yp-stats{grid-template-columns:1fr}}
+
+</style>
+<style>
+
+/* Main campaign website visual system */
+:root{--navy:#172b4d;--blue:#82bee1;--red:#e83d4b;--paper:#faf9f6;--ink:#172b4d;--muted:#697487;--line:#e4e5e5}
+html,body{background:var(--paper);color:var(--navy);font-family:Montserrat,Arial,sans-serif}
+body{font-size:14px}
+.announcement{display:flex;width:100%;min-height:54px;box-sizing:border-box;padding:14px 20px;align-items:center;justify-content:center;gap:12px;background:#db2a37;color:#fff;text-align:center;font-size:clamp(10px,.85vw,12px);line-height:1.45;font-weight:800;letter-spacing:.025em;text-decoration:none;transition:background .22s ease,color .22s ease}
+.announcement-cta{display:inline-flex;align-items:center;gap:7px;color:inherit;font-weight:900;white-space:nowrap}
+.announcement-arrow{font-size:17px;transition:transform .2s}
+.announcement:hover{background:var(--blue);color:var(--navy)}
+.announcement:hover .announcement-arrow{transform:translateX(4px)}
+.site-header{height:66px;background:#f3f1ef;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(18px,4vw,64px);gap:24px;border-bottom:1px solid #e7e8e8}
+.site-header .brand{display:flex;align-items:center;flex:0 0 auto}
+.header-main-logo{display:block;width:clamp(75px,8vw,104px);height:38px;object-fit:contain;object-position:left center}
+.site-header nav{display:flex;align-items:center;justify-content:flex-end;gap:clamp(10px,1.6vw,23px);margin-left:auto;font-size:9px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+.site-header nav a{color:var(--navy);text-decoration:none;transition:color .2s}
+.site-header nav a:hover{color:var(--red)}
+.site-header nav .nav-donate{background:var(--red);color:white;padding:10px 20px;border-radius:25px;font-size:9px;font-weight:900;letter-spacing:.1em}
+.site-header nav .nav-donate:hover{background:#cf2e3c;color:white}
+.nav-social a{width:26px;height:26px;display:grid;place-items:center;border:1px solid var(--navy);border-radius:50%;font-size:10px;font-weight:900;text-decoration:none;transition:transform .2s,background .2s}
+.nav-social a:hover{transform:translateY(-3px);background:var(--blue)}
+.shell{width:min(1240px,calc(100% - 48px));margin:42px auto 76px}
+.intro{margin-bottom:26px}.eyebrow{font-size:9px;letter-spacing:.25em;color:#6b879f}
+.intro h1{font-size:clamp(34px,4vw,50px);font-weight:500;letter-spacing:-.055em;color:var(--navy);margin:10px 0}
+.panel{border:1px solid #e4e5e5;border-radius:2px;box-shadow:0 12px 32px #172b4d0d;background:#fff}
+.auth-wrap{max-width:540px;margin:68px auto 90px}
+.auth-card{padding:clamp(26px,4vw,42px);border-top:4px solid var(--blue)}
+.auth-card h2,.editor-head h2{font-weight:500;letter-spacing:-.045em}
+.auth-card h2{font-size:clamp(25px,3vw,32px);margin:10px 0}
+.auth-card p{font-size:13px;line-height:1.75}
+.field label{font-size:9px;letter-spacing:.14em;color:#64758a}
+.field input,.field textarea,.field select{border:1px solid #d7dce1;border-radius:2px;padding:13px 14px;background:#fff}
+.field input:hover,.field textarea:hover,.field select:hover{border-color:#9bb8ce}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--blue);box-shadow:0 2px 0 var(--blue)}
+.btn{border-radius:25px;background:var(--red);padding:13px 22px;letter-spacing:.1em;transition:transform .2s,background .2s}
+.btn:hover{background:#cf2e3c;transform:translateY(-2px)}
+.btn.blue{background:var(--blue);color:var(--navy)}.btn.blue:hover{background:#6eadd4}
+.btn.red{background:var(--red)}.btn.ghost{border-radius:25px}
+.auth-toggle{color:#28658e}
+.workspace{gap:20px}
+.sidebar{border-top:3px solid var(--blue)}
+.article-item{border-radius:2px;transition:border-color .2s,background .2s}
+.article-item:hover,.article-item.active{border-color:var(--blue);background:#f3f8fb}
+.editor{border-top:3px solid var(--blue)}
+.block{border-radius:2px;background:#faf9f6}
+.block-head strong,.side-head strong,.review-box h3{letter-spacing:.15em}
+.status{border-radius:20px}
+.review-box{border-radius:2px;background:#f3f6f8}
+.members{border-top:3px solid var(--blue)}
+.site-footer{background:var(--navy);color:#fff;text-align:center;padding:38px 20px 28px}
+.site-footer .footer-brand{display:inline-flex;align-items:center;justify-content:center}
+.site-footer .footer-brand img{width:min(250px,65vw);max-height:76px;object-fit:contain}
+.site-footer .footer-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin:22px auto 16px;font-size:9px;font-weight:700}
+.site-footer a{color:inherit;text-decoration:none;transition:color .2s,transform .2s}
+.site-footer .footer-links a:hover,.site-footer .footer-legal a:hover{color:var(--blue)}
+.site-footer .footer-social{display:flex;justify-content:center;gap:13px;margin:16px auto}
+.site-footer .footer-social a{width:34px;height:34px;display:grid;place-items:center;border:1px solid #ffffff88;border-radius:50%;font-size:11px;font-weight:900}
+.site-footer .footer-social a:hover{background:var(--blue);color:var(--navy)}
+.site-footer .footer-legal{max-width:580px;margin:18px auto 0;font-size:8px;line-height:1.8;color:#aebbd0}
+.site-footer .footer-legal a{text-decoration:underline}
+.site-footer .copyright{font-size:8px;color:#8797b0;margin-top:14px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+@media(max-width:760px){
+ .site-header{height:auto;min-height:58px;padding:10px 17px;gap:12px}
+ .header-main-logo{width:64px;height:32px}
+ .site-header nav{gap:10px;font-size:7px;flex-wrap:wrap}
+ .site-header nav .nav-donate{padding:8px 12px;font-size:7px}
+ .nav-social{display:none}
+ .shell{width:calc(100% - 28px);margin:28px auto 54px}
+ .auth-wrap{margin:38px auto 55px}
+ .site-footer .footer-links{gap:13px}
+}
+@media(max-width:430px){
+ .announcement{font-size:9px;flex-wrap:wrap;gap:4px 8px;padding:11px 12px}
+ .site-header{align-items:center}
+ .header-main-logo{width:52px;height:28px}
+ .site-header nav{gap:8px;font-size:6px}
+ .site-header nav .nav-donate{padding:7px 9px;font-size:6px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+
+/* Match the main website header and page colors */
+:root{--navy:#172b4d;--blue:#82bee1;--paper:#faf9f6;--ink:#172b4d}
+html,body{background:var(--paper)!important;color:var(--navy)!important}
+body{background:var(--paper)!important}
+.announcement{display:flex!important;min-height:35px!important;height:auto!important;padding:9px 18px!important;align-items:center!important;justify-content:center!important;background:#db2a37!important;color:#fff!important;text-align:center!important;font-size:10px!important;font-weight:800!important;letter-spacing:.025em!important;line-height:1.4!important;cursor:default!important;text-decoration:none!important;transition:background .22s ease,color .22s ease!important}
+.announcement:hover{background:#82bee1!important;color:#172b4d!important}
+.site-header{height:68px!important;min-height:68px!important;background:#172b4d!important;color:#fff!important;border-bottom:0!important;padding:0 clamp(18px,4vw,64px)!important}
+.header-signout{border:1px solid #ffffff88;background:transparent;color:#fff;border-radius:22px;padding:9px 15px;font-size:9px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;cursor:pointer;transition:background .2s,color .2s}.header-signout:hover{background:#82bee1;color:#172b4d}
+.site-header .brand{color:#fff!important}
+.site-header nav a{color:#fff!important}
+.site-header nav a:hover{color:#82bee1!important}
+.site-header nav .nav-donate{background:var(--red)!important;color:#fff!important}
+.site-header nav .nav-donate:hover{background:#cf2e3c!important;color:#fff!important}
+.nav-social a{color:#fff!important;border-color:#ffffffaa!important}
+.nav-social a:hover{background:#82bee1!important;color:#172b4d!important}
+@media(max-width:760px){.site-header{height:auto!important;min-height:58px!important;padding:10px 17px!important}}
+@media(max-width:430px){.announcement{font-size:9px!important;padding:9px 12px!important}}
+.rich-tools{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin:8px 0 10px}.rich-color-label{font-size:10px;font-weight:800;color:#66758a;margin-left:5px}.color-swatch{width:23px;height:23px;border:2px solid #fff;box-shadow:0 0 0 1px #aeb8c3;border-radius:50%;background:#e83d4b;padding:0;cursor:pointer}.color-swatch.navy{background:#172b4d}.color-swatch.blue{background:#82bee1}.color-swatch.black{background:#1d2d49}.rich-editor{min-height:150px;border:1px solid #cfd7df;border-radius:3px;padding:13px 14px;background:#fff;color:var(--navy);outline:none;line-height:1.7;white-space:pre-wrap}.rich-editor:focus{border-color:#82bee1;box-shadow:0 2px 0 #82bee1}.rich-editor:empty:before{content:attr(data-placeholder);color:#9aa5b2;pointer-events:none}.rich-editor[contenteditable=false]{background:#f7f8f9;color:#536176}.rich-editor p{margin:0 0 10px}.rich-editor p:last-child{margin-bottom:0}
+</style>
+</head>
+<body>
+<div class="announcement">Working hard together for Team Ament. Let’s win this!</div>
+<header class="site-header">
+  <a class="brand" href="./" aria-label="AmentAmour home"><img class="header-main-logo" src="https://raw.githubusercontent.com/carrington-rblx/electament.com/main/amentamour-flag.svg" alt="AmentAmour campaign flag"></a>
+  <nav aria-label="Main navigation">
+    <a href="./">Home</a><a href="about-ament.html">About Ament</a><a href="news.html">News</a><a href="https://carrington-rblx.github.io/electament.com/#volunteer">Volunteer</a><a class="nav-donate" href="https://carrington-rblx.github.io/electament.com/#donate">Donate</a>
+  </nav>
+  <button id="signout" class="header-signout hidden" type="button">Sign out</button>
+  <div class="nav-social"><a href="https://discord.gg/9B9HCPXgNg" aria-label="Discord" target="_blank" rel="noopener noreferrer">D</a></div>
+</header>
+<main id="authView" class="shell auth-wrap">
+  <section class="panel auth-card">
+    <span class="eyebrow">Private staff workspace</span><h2 id="authTitle">Sign in to Campaign Room</h2>
+    <p>Authorized campaign staff can draft press releases, upload media, and manage editorial review here.</p>
+    <div id="authMessage" class="notice hidden" role="status"></div>
+    <form id="authForm">
+      <div class="field"><label for="authEmail">Email or username</label><input id="authEmail" type="text" autocomplete="username" placeholder="Your email or staff username" required></div>
+      <div class="field"><label for="authPassword">Password</label><input id="authPassword" type="password" minlength="8" autocomplete="current-password" required></div>
+      <button class="btn" id="authSubmit" type="submit">Sign in</button>
+    </form>
+    <p class="help" style="margin-top:20px">Staff accounts are created by the campaign administrator. Administrators sign in with their email; staff sign in with their assigned username and password.</p>
+  </section>
+</main>
+<main id="appView" class="shell hidden">
+  <div class="intro"><span class="eyebrow">Editorial operations</span><h1>Campaign newsroom</h1><p id="welcomeText">Manage press releases, review submissions, and prepare approved updates for publication.</p></div>
+  <div id="appMessage" class="notice hidden" role="status"></div>
+  <div class="workspace">
+    <aside class="panel sidebar">
+      <div class="side-head"><strong>Articles</strong><button class="btn blue" id="newArticle">+ New</button></div>
+      <div id="articleList" class="article-list"><div class="empty">Loading articles…</div></div>
+      <p class="help" style="margin-top:16px">Staff see their own work. Administrators can review and edit all submissions.</p>
+    </aside>
+    <section class="panel editor" id="editorPanel">
+      <div class="empty"><strong>Welcome to Campaign Room</strong>Select an article or create a new press release.</div>
+    </section>
+  </div>
+  <section id="galleryPanel" class="panel members hidden">
+    <div class="side-head"><strong>Campaign image gallery</strong><span class="status approved">Administrator only</span></div>
+    <p class="help">Manage the public Images page: create event albums, upload or replace covers, add/remove photos, change captions and dates, reorder albums, and publish or hide them.</p>
+    <div class="workspace" style="grid-template-columns:minmax(220px,.7fr) minmax(0,1.3fr);margin-top:16px">
+      <div><div class="side-head"><strong>Albums</strong><button class="btn blue" id="newAlbum" type="button">+ New album</button></div><div id="albumList" class="article-list"><div class="empty">Loading albums…</div></div></div>
+      <div id="albumEditor" class="panel editor"><div class="empty"><strong>Gallery manager</strong>Select an album or create a new one.</div></div>
+    </div>
+  </section>
+  
+<section id="youPresidentAdminPanel" class="panel members hidden" style="margin-top:22px">
+ <div class="side-head"><strong>You President · Administration</strong><span class="status approved">Administrator only</span></div>
+ <p class="help">Manage the official proposal library and review anonymous completed games. Participants are not asked for names, email addresses or account details; response references identify a game only.</p>
+ <div class="yp-notice" id="ypAdminMessage">Loading You President data…</div>
+ <div class="yp-admin-grid">
+  <section class="yp-admin-box"><div class="side-head"><strong>Policy library</strong><button class="btn blue" id="ypNewPolicy" type="button">+ New proposal</button></div><p class="help" id="ypPolicyCount"></p><input id="ypPolicySearch" class="yp-search" placeholder="Search proposals"><select id="ypCategoryFilter" class="yp-search"><option value="">All categories</option><option value="Foreign Affairs">Foreign Affairs</option><option value="Education">Education</option><option value="Agriculture">Agriculture</option><option value="Family & Society">Family & Society</option><option value="Innovation & Technology">Innovation & Technology</option><option value="Democracy & Institutions">Democracy & Institutions</option><option value="Healthcare">Healthcare</option><option value="Economy & Employment">Economy & Employment</option><option value="Environment & Climate">Environment & Climate</option><option value="Security & Justice">Security & Justice</option><option value="Disability & Inclusion">Disability & Inclusion</option><option value="Transport & Infrastructure">Transport & Infrastructure</option><option value="Housing & Urban Development">Housing & Urban Development</option><option value="Culture & Heritage">Culture & Heritage</option><option value="Energy & Industry">Energy & Industry</option></select><div id="ypPolicyList" class="yp-list"></div></section>
+  <section class="yp-admin-box"><div class="side-head"><strong id="ypEditorTitle">Edit proposal</strong></div><form id="ypPolicyForm"><div class="field"><label for="ypTitle">Proposal title</label><input id="ypTitle" maxlength="180" required></div><div class="field"><label for="ypCategory">Category</label><select id="ypCategory"><option value="Foreign Affairs">Foreign Affairs</option><option value="Education">Education</option><option value="Agriculture">Agriculture</option><option value="Family & Society">Family & Society</option><option value="Innovation & Technology">Innovation & Technology</option><option value="Democracy & Institutions">Democracy & Institutions</option><option value="Healthcare">Healthcare</option><option value="Economy & Employment">Economy & Employment</option><option value="Environment & Climate">Environment & Climate</option><option value="Security & Justice">Security & Justice</option><option value="Disability & Inclusion">Disability & Inclusion</option><option value="Transport & Infrastructure">Transport & Infrastructure</option><option value="Housing & Urban Development">Housing & Urban Development</option><option value="Culture & Heritage">Culture & Heritage</option><option value="Energy & Industry">Energy & Industry</option></select></div><div class="field"><label for="ypIcon">Category icon</label><input id="ypIcon" maxlength="12" placeholder="e.g. 🎓 or ✦"></div><div class="field"><label for="ypSummary">Short description</label><textarea id="ypSummary" rows="3" maxlength="500" required></textarea></div><div class="field"><label for="ypDetails">Learn more details</label><textarea id="ypDetails" rows="5"></textarea></div><div class="field"><label for="ypSort">Display order</label><input id="ypSort" type="number" value="151"></div><label class="yp-check"><input id="ypActive" type="checkbox" checked> Active in public games</label><div class="editor-actions"><button class="btn" type="submit">Save proposal</button><button class="btn blue" id="ypArchive" type="button" hidden>Archive / restore</button><button class="btn red" id="ypDelete" type="button" hidden>Delete</button></div></form></section>
+ </div>
+ <section class="yp-admin-box" style="margin-top:18px"><div class="side-head"><strong>Completed responses</strong><div><span id="ypSessionCount" class="help"></span> <button class="btn blue" id="ypRefreshResponses" type="button">Refresh</button></div></div><div class="yp-admin-grid"><div id="ypSessionList" class="yp-list"></div><div id="ypResponseDetail" class="yp-response-detail"><p class="yp-muted">Select an anonymous response to inspect its 25 decisions and any improvement suggestions.</p></div></div></section>
+ <section class="yp-admin-box" style="margin-top:18px"><div class="side-head"><strong>Policy statistics & improvement ideas</strong></div><div id="ypStats" class="yp-stats"></div></section>
+</section>
+<section id="passwordPanel" class="panel members">
+    <div class="side-head"><strong>Account security</strong></div>
+    <form id="passwordForm" class="grid2">
+      <div class="field"><label for="newPassword">New password</label><input id="newPassword" type="password" minlength="12" autocomplete="new-password" required><span class="help">Use at least 12 characters. Change the temporary password when you first sign in.</span></div>
+      <div style="align-self:end"><button class="btn blue" type="submit">Change password</button></div>
+    </form>
+  </section>
+  <section id="memberPanel" class="panel members hidden">
+    <div class="side-head"><strong>Account management</strong><span class="status approved">Administrator only</span></div>
+    <p class="help">Only an existing administrator can create accounts. There is no public sign-up. You can create both staff members and additional administrators here; assign each person a username and temporary password. They do not need email addresses. Share login details privately, and suspend access whenever needed.</p>
+    <form id="memberForm" class="grid2">
+      <div class="field"><label for="memberUsername">Account username</label><input id="memberUsername" type="text" minlength="3" maxlength="24" pattern="[a-zA-Z0-9_]{3,24}" autocomplete="off" placeholder="e.g. campaign_writer" required></div>
+      <div class="field"><label for="memberPassword">Temporary password</label><input id="memberPassword" type="password" minlength="12" autocomplete="new-password" required><span class="help">At least 12 characters.</span></div>
+      <div class="field"><label for="memberRole">Role</label><select id="memberRole"><option value="staff">Staff</option><option value="admin">Administrator</option></select></div>
+      <div style="grid-column:1/-1"><button class="btn" type="submit">Create account</button></div>
+    </form>
+    <div id="memberList"></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <a class="footer-brand" href="./" aria-label="AmentAmour for President"><img src="https://raw.githubusercontent.com/carrington-rblx/electament.com/main/a3ef5bfb-0046-4073-8108-4d8746dd5de2.png" alt="AmentAmour for President"></a>
+  <div class="footer-links"><a href="./">Home</a><a href="about-ament.html">About Ament</a><a href="news.html">News</a><a href="https://carrington-rblx.github.io/electament.com/#volunteer">Volunteer</a><a href="https://carrington-rblx.github.io/electament.com/#donate">Donate</a></div>
+  <div class="footer-social"><a href="https://discord.gg/9B9HCPXgNg" aria-label="Discord" target="_blank" rel="noopener noreferrer">D</a><a href="https://republicrx.app/@AmentAmour" aria-label="RepublicRx" target="_blank" rel="noopener noreferrer">R</a></div>
+  <div class="footer-legal">Paid for by AmentAmour for President. <a href="mailto:privacy@electament.com">Privacy policy</a> · <a href="mailto:campaign@electament.com">Contact</a></div>
+  <div class="copyright">© 2026 AmentAmour for President. All rights reserved.</div>
+</footer>
+<script type="module" src="campaign-room.js"></script><script type="module" src="campaign-room-you-president.js"></script>
+</body></html>
