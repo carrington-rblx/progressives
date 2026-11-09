@@ -1580,3 +1580,69 @@ header.split-site-header .nav-social svg{width:18px!important;height:18px!import
   header.split-site-header .nav-social svg{width:12px!important;height:12px!important}
 }
 </style>
+
+
+<style id="refine-hero-and-header-alignment">
+/* A slightly deeper, even hero tint without obscuring the background image. */
+.hero:after{
+  background:rgba(12,35,68,.27)!important;
+}
+/* Keep both navigation groups level and make every text link use the same button geometry. */
+header.split-site-header{
+  align-items:center!important;
+}
+header.split-site-header .nav-left,
+header.split-site-header .brand,
+header.split-site-header .header-right-group{
+  align-self:center!important;
+  transform:translateY(17px)!important;
+}
+header.split-site-header nav{
+  align-items:center!important;
+  justify-content:center!important;
+}
+header.split-site-header nav a{
+  height:44px!important;
+  min-height:44px!important;
+  line-height:1!important;
+  box-sizing:border-box!important;
+  vertical-align:middle!important;
+}
+header.split-site-header .header-right-group{
+  align-items:center!important;
+}
+header.split-site-header .nav-social{
+  align-items:center!important;
+}
+header.split-site-header .header-main-logo{
+  width:clamp(136px,15vw,194px)!important;
+  height:clamp(68px,7vw,94px)!important;
+}
+@media(max-width:760px){
+  header.split-site-header .nav-left,
+  header.split-site-header .brand,
+  header.split-site-header .header-right-group{
+    transform:translateY(12px)!important;
+  }
+  header.split-site-header .header-main-logo{
+    width:clamp(78px,19vw,112px)!important;
+    height:clamp(48px,11vw,66px)!important;
+  }
+  header.split-site-header nav a{
+    height:34px!important;min-height:34px!important;
+  }
+}
+@media(max-width:430px){
+  header.split-site-header .nav-left,
+  header.split-site-header .brand,
+  header.split-site-header .header-right-group{
+    transform:translateY(11px)!important;
+  }
+  header.split-site-header .header-main-logo{
+    width:66px!important;height:43px!important;
+  }
+  header.split-site-header nav a{
+    height:30px!important;min-height:30px!important;
+  }
+}
+</style>
