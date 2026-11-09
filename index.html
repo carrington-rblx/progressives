@@ -667,23 +667,7 @@ demoSignup('vol-form','vol-status');document.getElementById('year').textContent=
 </style>
 
 
-<style id="full-screen-hero">
-/* With the announcement removed, let the hero fill the viewport below the navigation */
-.hero{
-  height:calc(100vh - 58px)!important;
-  height:calc(100svh - 58px)!important;
-  min-height:0!important;
-  max-height:none!important;
-}
-@media(max-width:760px){
-  .hero{
-    height:calc(100vh - 54px)!important;
-    height:calc(100svh - 54px)!important;
-    min-height:0!important;
-    max-height:none!important;
-  }
-}
-</style>
+
 
 </body></html>
 <style>
@@ -1259,3 +1243,20 @@ header .header-main-logo{
 }
 </style>
 
+
+<style id="full-screen-hero">
+/* The hero now fills the entire screen; the transparent navigation overlays its top edge. */
+.hero{
+  height:100vh!important;
+  height:100svh!important;
+  min-height:0!important;
+  max-height:none!important;
+}
+header:not(.header-scrolled){top:0!important}
+header:not(.header-scrolled) .brand,
+header:not(.header-scrolled) nav,
+header:not(.header-scrolled) .nav-social{transform:translateY(0)!important}
+@media(max-width:760px){
+  .hero{height:100vh!important;height:100svh!important;min-height:0!important;max-height:none!important}
+}
+</style>
