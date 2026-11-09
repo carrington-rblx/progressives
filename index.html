@@ -587,7 +587,7 @@ nav .nav-platform:hover,.footer-links .nav-platform:hover{color:#e83d4b!importan
 </head>
 <body>
 <header>
-<a class="brand" href="./" aria-label="AmentAmour home"><img class="header-main-logo" src="https://raw.githubusercontent.com/carrington-rblx/progressives/main/Conservative%20Party%20(1).svg" alt="Progressive Party"></a>
+<a class="brand" href="./" aria-label="AmentAmour home"><img class="header-main-logo" src="https://raw.githubusercontent.com/carrington-rblx/progressives/main/progress_workmark.png" alt="Progressive Party"></a>
 <nav><a href="./">Home</a><a href="about-ament.html">About Ament</a><a href="news.html">News</a><a href="images.html">Images</a></nav>
 <div class="nav-social"><a href="https://discord.gg/9B9HCPXgNg" aria-label="Discord" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M19.7 5.3A18.5 18.5 0 0 0 15.2 4l-.6 1.2a17 17 0 0 0-5.2 0L8.8 4a18.5 18.5 0 0 0-4.5 1.3C1.5 9.5.7 13.6 1.1 17.6a18.2 18.2 0 0 0 5.5 2.8l1.2-2a11.8 11.8 0 0 1-1.9-.9l.5-.4a13.2 13.2 0 0 0 11.2 0l.5.4a11.8 11.8 0 0 1-1.9.9l1.2 2a18.2 18.2 0 0 0 5.5-2.8c.5-4.6-.8-8.7-3.2-12.3ZM8.8 14.8c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm6.4 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg></a><a href="https://republicrx.app/@AmentAmour" aria-label="RepublicRx" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/carrington-rblx/electament.com/main/REPUBLIC%20LOGO.png" alt="RepublicRx" style="width:18px;height:18px;object-fit:contain;display:block"></a><a class="nav-donate" href="#donate">Donate</a></div>
 </header>
@@ -1361,5 +1361,73 @@ header .nav-social{margin-left:auto!important}
   header .brand{left:7px!important}
   header .header-main-logo{width:78px!important;max-height:29px!important}
   header nav{font-size:5.5px!important;gap:5px!important}
+}
+</style>
+
+
+<style id="header-all-controls-centered-over-hero">
+/* Bring the logo, page links and every social/donate control together as one centered group. */
+header{
+  top:0!important;left:0!important;right:0!important;
+  height:auto!important;min-height:0!important;
+  padding:22px 18px 0!important;
+  display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;
+  align-items:center!important;justify-content:center!important;
+  gap:clamp(10px,1.7vw,22px)!important;
+  background:transparent!important;border:0!important;box-shadow:none!important;
+}
+header.header-scrolled{top:0!important;padding-top:12px!important}
+header .brand{
+  position:static!important;left:auto!important;top:auto!important;
+  flex:0 0 auto!important;margin:0!important;
+  transform:translateY(9px)!important;
+}
+header .header-main-logo{
+  content:url("https://raw.githubusercontent.com/carrington-rblx/progressives/main/progress_workmark.png")!important;
+  width:clamp(108px,11vw,145px)!important;height:auto!important;max-height:48px!important;
+  object-fit:contain!important;object-position:center!important;
+}
+header nav{
+  position:static!important;left:auto!important;top:auto!important;
+  flex:0 1 auto!important;margin:0!important;
+  transform:translateY(9px)!important;
+  display:flex!important;justify-content:center!important;align-items:center!important;
+  gap:clamp(8px,1.3vw,18px)!important;
+}
+header .nav-social{
+  position:static!important;flex:0 0 auto!important;margin:0!important;
+  transform:translateY(9px)!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  gap:8px!important;
+}
+header .nav-social a:not(.nav-donate){
+  display:inline-grid!important;width:25px!important;height:25px!important;
+}
+header .nav-donate{white-space:nowrap!important}
+.hero-center-mark{
+  width:min(620px,76vw)!important;
+  max-height:78vh!important;
+}
+@media(max-width:760px){
+  header{
+    padding:18px 9px 0!important;gap:8px!important;
+    flex-wrap:wrap!important;row-gap:7px!important;
+  }
+  header .brand,header nav,header .nav-social{transform:translateY(7px)!important}
+  header .header-main-logo{width:clamp(90px,22vw,118px)!important;max-height:37px!important}
+  header nav{gap:clamp(6px,1.7vw,11px)!important;font-size:7px!important}
+  header .nav-social{gap:6px!important}
+  header .nav-social a:not(.nav-donate){width:22px!important;height:22px!important}
+  header .nav-donate{padding:7px 10px!important;font-size:7px!important}
+  .hero-center-mark{width:min(430px,84vw)!important;max-height:68vh!important}
+}
+@media(max-width:430px){
+  header{column-gap:7px!important;row-gap:5px!important;padding-left:6px!important;padding-right:6px!important}
+  header .header-main-logo{width:82px!important;max-height:31px!important}
+  header nav{gap:5px!important;font-size:6px!important;letter-spacing:.02em!important}
+  header .nav-social{gap:5px!important}
+  header .nav-social a:not(.nav-donate){width:20px!important;height:20px!important}
+  header .nav-donate{padding:6px 7px!important;font-size:6px!important}
+  .hero-center-mark{width:min(350px,88vw)!important;max-height:62vh!important}
 }
 </style>
