@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#182b50">
 <meta name="description" content="From a historic tenure as Secretary of State to the race for the White House: AmentAmour will fight to fix the mess left behind and deliver the leadership our nation deserves. VOTE AMENTAMOUR FOR PRESIDENT.">
-<link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/carrington-rblx/progressives/main/Conservative%20Party%20(1).svg">
+<link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/carrington-rblx/progressives/main/progress_workmark.png">
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/carrington-rblx/progressives/main/Conservative%20Party%20(1).svg" type="image/svg+xml">
 <title>AmentAmour For President</title>
 <meta property="og:type" content="website">
@@ -587,7 +587,7 @@ nav .nav-platform:hover,.footer-links .nav-platform:hover{color:#e83d4b!importan
 </head>
 <body>
 <header>
-<a class="brand" href="./" aria-label="AmentAmour home"><img class="header-main-logo" src="https://raw.githubusercontent.com/carrington-rblx/progressives/main/Conservative%20Party%20(1).svg" alt="AmentAmour for President"></a>
+<a class="brand" href="./" aria-label="AmentAmour home"><img class="header-main-logo" src="https://raw.githubusercontent.com/carrington-rblx/progressives/main/Conservative%20Party%20(1).svg" alt="Progressive Party"></a>
 <nav><a href="./">Home</a><a href="about-ament.html">About Ament</a><a href="news.html">News</a><a href="images.html">Images</a></nav>
 <div class="nav-social"><a href="https://discord.gg/9B9HCPXgNg" aria-label="Discord" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M19.7 5.3A18.5 18.5 0 0 0 15.2 4l-.6 1.2a17 17 0 0 0-5.2 0L8.8 4a18.5 18.5 0 0 0-4.5 1.3C1.5 9.5.7 13.6 1.1 17.6a18.2 18.2 0 0 0 5.5 2.8l1.2-2a11.8 11.8 0 0 1-1.9-.9l.5-.4a13.2 13.2 0 0 0 11.2 0l.5.4a11.8 11.8 0 0 1-1.9.9l1.2 2a18.2 18.2 0 0 0 5.5-2.8c.5-4.6-.8-8.7-3.2-12.3ZM8.8 14.8c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm6.4 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg></a><a href="https://republicrx.app/@AmentAmour" aria-label="RepublicRx" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/carrington-rblx/electament.com/main/REPUBLIC%20LOGO.png" alt="RepublicRx" style="width:18px;height:18px;object-fit:contain;display:block"></a><a class="nav-donate" href="#donate">Donate</a></div>
 </header>
@@ -1258,5 +1258,76 @@ header:not(.header-scrolled) nav,
 header:not(.header-scrolled) .nav-social{transform:translateY(0)!important}
 @media(max-width:760px){
   .hero{height:100vh!important;height:100svh!important;min-height:0!important;max-height:none!important}
+}
+</style>
+
+<style id="centered-header-brand-and-navigation">
+/* Center the new wordmark, navigation links and donate action as one group. */
+header{
+  display:flex!important;
+  justify-content:center!important;
+  align-items:center!important;
+  gap:clamp(18px,3vw,42px)!important;
+  padding-left:16px!important;
+  padding-right:16px!important;
+}
+header .brand{
+  flex:0 0 auto!important;
+  display:flex!important;
+  justify-content:center!important;
+  align-items:center!important;
+}
+header .header-main-logo{
+  display:block!important;
+  width:clamp(135px,16vw,190px)!important;
+  height:auto!important;
+  max-height:48px!important;
+  object-fit:contain!important;
+}
+header nav{
+  flex:0 0 auto!important;
+  display:flex!important;
+  justify-content:center!important;
+  align-items:center!important;
+  gap:clamp(10px,1.7vw,23px)!important;
+}
+header .nav-social{
+  flex:0 0 auto!important;
+  display:flex!important;
+  justify-content:center!important;
+  align-items:center!important;
+  gap:10px!important;
+}
+header .brand,
+header nav,
+header .nav-social,
+header:not(.header-scrolled) .brand,
+header:not(.header-scrolled) nav,
+header:not(.header-scrolled) .nav-social{
+  transform:none!important;
+}
+@media(max-width:760px){
+  header{
+    gap:12px!important;
+    padding-left:10px!important;
+    padding-right:10px!important;
+  }
+  header .header-main-logo{
+    width:clamp(94px,25vw,125px)!important;
+    max-height:36px!important;
+  }
+  header nav{
+    gap:clamp(6px,1.8vw,12px)!important;
+    font-size:7px!important;
+  }
+  header .nav-social{gap:6px!important}
+  header .nav-social a:not(.nav-donate){display:none!important}
+  header .nav-donate{padding:8px 11px!important;font-size:8px!important}
+}
+@media(max-width:430px){
+  header{gap:8px!important}
+  header .header-main-logo{width:90px!important;max-height:32px!important}
+  header nav{gap:6px!important;font-size:6px!important;letter-spacing:.04em!important}
+  header .nav-donate{padding:7px 8px!important;font-size:7px!important}
 }
 </style>
