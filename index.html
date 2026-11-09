@@ -612,6 +612,22 @@ header.split-site-header{
 }
 </style>
 
+
+<style id="header-no-background">
+header.split-site-header,
+header.split-site-header.header-scrolled,
+header.split-site-header::before,
+header.split-site-header::after {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+header.split-site-header * {
+  background-color: transparent !important;
+}
+</style>
+
 </head>
 <body>
 <header class="split-site-header">
